@@ -1,0 +1,248 @@
+/* Mobile-first wedding invitation design */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9f5;
+    color: #4a2c2a;
+    overflow-x: hidden;
+    font-family: 'Delius', cursive;
+
+    
+  }
+  
+  .invitation {
+    text-align: center;
+    
+  }
+  
+  /* Hero Section (with background couple image) */
+  .hero-section {
+    background-image: url('../public/images/w1.jpeg'); /* Replace with your image */
+    background-size: contain;
+    background-position: center;
+    height:70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    margin-top: 11rem;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+   
+  }
+  
+  .overlay h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .overlay h2 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+  
+  .overlay p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .countdown-timer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .countdown-timer div {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px;
+    border-radius: 10px;
+  }
+  
+  .countdown-timer span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Slider Section */
+  .slider-container {
+    width: 100%;
+    margin: 16px 0;
+  }
+  
+  .slider-container img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .video-section {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff2ef;
+  }
+  
+  .video-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  
+  .wedding-video {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .full-image-section {
+    width: 100%;
+    height:50vh;
+    overflow: hidden;
+   
+  }
+  .full-image-section3 {
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+   
+  }
+  .full-image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .full-image-section3 img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    display: block;
+  }
+  .simple-slider-section {
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  .simple-slider {
+    position: relative;
+    width: 100%;
+    height: 370px;
+   
+  }
+  
+  .simple-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .simple-slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .simple-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 12px;
+  }
+  .full-image-section2 {
+    width: 100%;
+    height:60vh;
+    overflow: hidden;
+    margin-top: 16px;
+  }
+  
+  .full-image-section2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  h3 {
+    font-family: 'Delius', cursive;
+    font-size: 30px;
+    margin: 0px;
+    padding-top: 10px;
+  }
+  .functions-section {
+    padding: 10px 10px;
+    background-color: #fff8f4;
+    text-align: center;
+    
+  }
+  
+  .functions-title {
+    font-family: 'Delius', cursive;
+    font-size: 2rem;
+    
+    color: #b36b00;
+  }
+  
+  .invitation-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 10px;
+  }
+  
+  .invitation-card {
+    background: #fffdf9;
+    border: 2px solid #e0c28d;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Delius', cursive;
+    color: #5a3e1b;
+    text-align: center;
+  }
+  
+  .invitation-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #b36b00;
+    font-family: 'Delius', cursive;
+  }
+  
+  .invitation-card .date-time,
+  .invitation-card .venue {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  .map-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #b36b00;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .map-button:hover {
+    background-color: #8c5100;
+  }
+  
