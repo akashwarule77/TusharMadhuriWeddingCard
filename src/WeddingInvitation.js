@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './WeddingInvitation.css';
@@ -52,9 +51,6 @@ export default function WeddingInvitation() {
     "/images/w13.jpeg",
     "/images/w14.jpeg",
     "/images/w15.jpeg",
-     
-     
-     
   ];
   
   const [currentSlide, setCurrentSlide] = useState(0);
